@@ -1,4 +1,4 @@
-Hours_Studied,Attendance,Parental_Involvement,Access_to_Resources,Extracurricular_Activities,Sleep_Hours,Previous_Scores,Motivation_Level,Internet_Access,Tutoring_Sessions,Family_Income,Teacher_Quality,School_Type,Peer_Influence,Physical_Activity,Learning_Disabilities,Parental_Education_Level,Distance_from_Home,Gender,Exam_Score
+Hours_Studied,Attendance,parental_involvement_id,access_resource_id,extracurricular_activity_id,Sleep_Hours,Previous_Scores,motivation_id,internet_access_id,Tutoring_Sessions,family_income_id,teacher_quality_id,school_type_id,peer_influence_id,Physical_Activity,learning_disability_id,parental_education_id,distance_from_home_id,gender_id,Exam_Score
 23,84,1,3,0,7,73,1,1,0,1,2,0,2,3,0,1,1,1,67
 19,64,1,2,0,8,59,1,1,2,2,2,0,0,4,0,2,2,0,61
 24,98,2,2,1,7,91,2,1,2,2,2,0,1,4,0,3,1,1,74
