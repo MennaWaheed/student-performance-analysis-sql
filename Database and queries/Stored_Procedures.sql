@@ -277,9 +277,9 @@ BEGIN
         CAST(AVG(CAST(Exam_Score AS FLOAT)) AS DECIMAL(5,2))
             AS Average_Score,
 
-        MAX(Exam_Score) Highest_Score,
+        MAX(Exam_Score) AS Highest_Score,
 
-        MIN(Exam_Score) Lowest_Score
+        MIN(Exam_Score) AS Lowest_Score
 
     FROM StudentPerformance;
 
@@ -299,7 +299,13 @@ BEGIN
 
     FROM StudentPerformance
 
-    ORDER BY Exam_Score DESC;
+    ORDER BY
+
+	Exam_Score DESC,
+	
+	Attendance DESC,
+
+	Hours_Studied DESC;
 
     PRINT '';
 
@@ -320,8 +326,10 @@ BEGIN
     WHERE
 
         Attendance<70
-        AND Hours_Studied<10;
+        AND Hours_Studied<10
+        AND motivation_id=1;
 
 END;
------------------------------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------------------------
+exec sp_GenerateNightlyReport
